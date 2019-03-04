@@ -1,0 +1,16 @@
+syntax = "proto3";
+option go_package = "github.com/taeho-io/id";
+package id;
+
+import "github.com/lyft/protoc-gen-validate/validate/validate.proto";
+
+service Id {
+    rpc Create (CreateRequest) returns (CreateResponse) {}
+}
+
+message CreateRequest {
+}
+
+message CreateResponse {
+    int64 id = 1;
+}
