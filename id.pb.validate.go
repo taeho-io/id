@@ -33,10 +33,9 @@ var (
 	_ = ptypes.DynamicAny{}
 )
 
-// Validate checks the field values on CreateRequest with the rules defined in
-// the proto definition for this message. If any rules are violated, an error
-// is returned.
-func (m *CreateRequest) Validate() error {
+// Validate checks the field values on NewRequest with the rules defined in the
+// proto definition for this message. If any rules are violated, an error is returned.
+func (m *NewRequest) Validate() error {
 	if m == nil {
 		return nil
 	}
@@ -44,9 +43,9 @@ func (m *CreateRequest) Validate() error {
 	return nil
 }
 
-// CreateRequestValidationError is the validation error returned by
-// CreateRequest.Validate if the designated constraints aren't met.
-type CreateRequestValidationError struct {
+// NewRequestValidationError is the validation error returned by
+// NewRequest.Validate if the designated constraints aren't met.
+type NewRequestValidationError struct {
 	field  string
 	reason string
 	cause  error
@@ -54,22 +53,22 @@ type CreateRequestValidationError struct {
 }
 
 // Field function returns field value.
-func (e CreateRequestValidationError) Field() string { return e.field }
+func (e NewRequestValidationError) Field() string { return e.field }
 
 // Reason function returns reason value.
-func (e CreateRequestValidationError) Reason() string { return e.reason }
+func (e NewRequestValidationError) Reason() string { return e.reason }
 
 // Cause function returns cause value.
-func (e CreateRequestValidationError) Cause() error { return e.cause }
+func (e NewRequestValidationError) Cause() error { return e.cause }
 
 // Key function returns key value.
-func (e CreateRequestValidationError) Key() bool { return e.key }
+func (e NewRequestValidationError) Key() bool { return e.key }
 
 // ErrorName returns error name.
-func (e CreateRequestValidationError) ErrorName() string { return "CreateRequestValidationError" }
+func (e NewRequestValidationError) ErrorName() string { return "NewRequestValidationError" }
 
 // Error satisfies the builtin error interface
-func (e CreateRequestValidationError) Error() string {
+func (e NewRequestValidationError) Error() string {
 	cause := ""
 	if e.cause != nil {
 		cause = fmt.Sprintf(" | caused by: %v", e.cause)
@@ -81,14 +80,14 @@ func (e CreateRequestValidationError) Error() string {
 	}
 
 	return fmt.Sprintf(
-		"invalid %sCreateRequest.%s: %s%s",
+		"invalid %sNewRequest.%s: %s%s",
 		key,
 		e.field,
 		e.reason,
 		cause)
 }
 
-var _ error = CreateRequestValidationError{}
+var _ error = NewRequestValidationError{}
 
 var _ interface {
 	Field() string
@@ -96,12 +95,12 @@ var _ interface {
 	Key() bool
 	Cause() error
 	ErrorName() string
-} = CreateRequestValidationError{}
+} = NewRequestValidationError{}
 
-// Validate checks the field values on CreateResponse with the rules defined in
+// Validate checks the field values on NewResponse with the rules defined in
 // the proto definition for this message. If any rules are violated, an error
 // is returned.
-func (m *CreateResponse) Validate() error {
+func (m *NewResponse) Validate() error {
 	if m == nil {
 		return nil
 	}
@@ -111,9 +110,9 @@ func (m *CreateResponse) Validate() error {
 	return nil
 }
 
-// CreateResponseValidationError is the validation error returned by
-// CreateResponse.Validate if the designated constraints aren't met.
-type CreateResponseValidationError struct {
+// NewResponseValidationError is the validation error returned by
+// NewResponse.Validate if the designated constraints aren't met.
+type NewResponseValidationError struct {
 	field  string
 	reason string
 	cause  error
@@ -121,22 +120,22 @@ type CreateResponseValidationError struct {
 }
 
 // Field function returns field value.
-func (e CreateResponseValidationError) Field() string { return e.field }
+func (e NewResponseValidationError) Field() string { return e.field }
 
 // Reason function returns reason value.
-func (e CreateResponseValidationError) Reason() string { return e.reason }
+func (e NewResponseValidationError) Reason() string { return e.reason }
 
 // Cause function returns cause value.
-func (e CreateResponseValidationError) Cause() error { return e.cause }
+func (e NewResponseValidationError) Cause() error { return e.cause }
 
 // Key function returns key value.
-func (e CreateResponseValidationError) Key() bool { return e.key }
+func (e NewResponseValidationError) Key() bool { return e.key }
 
 // ErrorName returns error name.
-func (e CreateResponseValidationError) ErrorName() string { return "CreateResponseValidationError" }
+func (e NewResponseValidationError) ErrorName() string { return "NewResponseValidationError" }
 
 // Error satisfies the builtin error interface
-func (e CreateResponseValidationError) Error() string {
+func (e NewResponseValidationError) Error() string {
 	cause := ""
 	if e.cause != nil {
 		cause = fmt.Sprintf(" | caused by: %v", e.cause)
@@ -148,14 +147,14 @@ func (e CreateResponseValidationError) Error() string {
 	}
 
 	return fmt.Sprintf(
-		"invalid %sCreateResponse.%s: %s%s",
+		"invalid %sNewResponse.%s: %s%s",
 		key,
 		e.field,
 		e.reason,
 		cause)
 }
 
-var _ error = CreateResponseValidationError{}
+var _ error = NewResponseValidationError{}
 
 var _ interface {
 	Field() string
@@ -163,4 +162,4 @@ var _ interface {
 	Key() bool
 	Cause() error
 	ErrorName() string
-} = CreateResponseValidationError{}
+} = NewResponseValidationError{}

@@ -50,8 +50,8 @@ func (s *IDServer) RegisterServer(srv *grpc.Server) {
 	id.RegisterIdServer(srv, s)
 }
 
-func (s *IDServer) Create(ctx context.Context, req *id.CreateRequest) (*id.CreateResponse, error) {
-	return handler.Create(s.ID())(ctx, req)
+func (s *IDServer) Create(ctx context.Context, req *id.NewRequest) (*id.NewResponse, error) {
+	return handler.New(s.ID())(ctx, req)
 }
 
 func Serve(addr string, cfg Config) error {

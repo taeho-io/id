@@ -5,12 +5,12 @@ package id;
 import "github.com/lyft/protoc-gen-validate/validate/validate.proto";
 
 service Id {
-    rpc Create (CreateRequest) returns (CreateResponse) {}
+    rpc New (NewRequest) returns (NewResponse) {}
 }
 
-message CreateRequest {
+message NewRequest {
 }
 
-message CreateResponse {
+message NewResponse {
     int64 id = 1;
 }

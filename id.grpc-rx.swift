@@ -28,10 +28,10 @@ import SwiftGRPC
 internal extension Id_IdServiceClient {
 
   /// RxSwift. Unary.
-  internal func create(_ request: Id_CreateRequest, metadata customMetadata: Metadata?) -> Observable<Id_CreateResponse> {
+  internal func new(_ request: Id_NewRequest, metadata customMetadata: Metadata?) -> Observable<Id_NewResponse> {
     return Observable.create { observer in
-      _ = try? self.create(request, metadata: customMetadata ?? self.metadata, completion: { resp, result in
-        guard let resp: Id_CreateResponse = resp else {
+      _ = try? self.new(request, metadata: customMetadata ?? self.metadata, completion: { resp, result in
+        guard let resp: Id_NewResponse = resp else {
           observer.onError(RPCError.callError(result))
           return
         }

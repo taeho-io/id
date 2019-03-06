@@ -25,43 +25,43 @@ import Dispatch
 import SwiftGRPC
 import SwiftProtobuf
 
-internal protocol Id_IdCreateCall: ClientCallUnary {}
+internal protocol Id_IdNewCall: ClientCallUnary {}
 
-fileprivate final class Id_IdCreateCallBase: ClientCallUnaryBase<Id_CreateRequest, Id_CreateResponse>, Id_IdCreateCall {
-  override class var method: String { return "/id.Id/Create" }
+fileprivate final class Id_IdNewCallBase: ClientCallUnaryBase<Id_NewRequest, Id_NewResponse>, Id_IdNewCall {
+  override class var method: String { return "/id.Id/New" }
 }
 
 
 /// Instantiate Id_IdServiceClient, then call methods of this protocol to make API calls.
 internal protocol Id_IdService: ServiceClient {
   /// Synchronous. Unary.
-  func create(_ request: Id_CreateRequest, metadata customMetadata: Metadata) throws -> Id_CreateResponse
+  func new(_ request: Id_NewRequest, metadata customMetadata: Metadata) throws -> Id_NewResponse
   /// Asynchronous. Unary.
-  func create(_ request: Id_CreateRequest, metadata customMetadata: Metadata, completion: @escaping (Id_CreateResponse?, CallResult) -> Void) throws -> Id_IdCreateCall
+  func new(_ request: Id_NewRequest, metadata customMetadata: Metadata, completion: @escaping (Id_NewResponse?, CallResult) -> Void) throws -> Id_IdNewCall
 
 }
 
 internal extension Id_IdService {
   /// Synchronous. Unary.
-  func create(_ request: Id_CreateRequest) throws -> Id_CreateResponse {
-    return try self.create(request, metadata: self.metadata)
+  func new(_ request: Id_NewRequest) throws -> Id_NewResponse {
+    return try self.new(request, metadata: self.metadata)
   }
   /// Asynchronous. Unary.
-  func create(_ request: Id_CreateRequest, completion: @escaping (Id_CreateResponse?, CallResult) -> Void) throws -> Id_IdCreateCall {
-    return try self.create(request, metadata: self.metadata, completion: completion)
+  func new(_ request: Id_NewRequest, completion: @escaping (Id_NewResponse?, CallResult) -> Void) throws -> Id_IdNewCall {
+    return try self.new(request, metadata: self.metadata, completion: completion)
   }
 
 }
 
 internal final class Id_IdServiceClient: ServiceClientBase, Id_IdService {
   /// Synchronous. Unary.
-  internal func create(_ request: Id_CreateRequest, metadata customMetadata: Metadata) throws -> Id_CreateResponse {
-    return try Id_IdCreateCallBase(channel)
+  internal func new(_ request: Id_NewRequest, metadata customMetadata: Metadata) throws -> Id_NewResponse {
+    return try Id_IdNewCallBase(channel)
       .run(request: request, metadata: customMetadata)
   }
   /// Asynchronous. Unary.
-  internal func create(_ request: Id_CreateRequest, metadata customMetadata: Metadata, completion: @escaping (Id_CreateResponse?, CallResult) -> Void) throws -> Id_IdCreateCall {
-    return try Id_IdCreateCallBase(channel)
+  internal func new(_ request: Id_NewRequest, metadata customMetadata: Metadata, completion: @escaping (Id_NewResponse?, CallResult) -> Void) throws -> Id_IdNewCall {
+    return try Id_IdNewCallBase(channel)
       .start(request: request, metadata: customMetadata, completion: completion)
   }
 

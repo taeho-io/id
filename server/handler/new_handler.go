@@ -8,16 +8,16 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-type CreateHandlerFunc func(ctx context.Context, req *id.CreateRequest) (*id.CreateResponse, error)
+type NewHandlerFunc func(ctx context.Context, req *id.NewRequest) (*id.NewResponse, error)
 
-func Create(tid tid.ID) CreateHandlerFunc {
-	return func(ctx context.Context, req *id.CreateRequest) (*id.CreateResponse, error) {
+func New(tid tid.ID) NewHandlerFunc {
+	return func(ctx context.Context, req *id.NewRequest) (*id.NewResponse, error) {
 		newID, err := tid.Generate()
 		if err != nil {
 			return nil, status.Error(codes.Internal, err.Error())
 		}
 
-		return &id.CreateResponse{
+		return &id.NewResponse{
 			Id: newID,
 		}, nil
 	}
