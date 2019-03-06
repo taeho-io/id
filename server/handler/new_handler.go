@@ -2,7 +2,7 @@ package handler
 
 import (
 	tid "github.com/taeho-io/go-taeho/id"
-	"github.com/taeho-io/idl/generated/go/id"
+	"github.com/taeho-io/idl/gen/go/id"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

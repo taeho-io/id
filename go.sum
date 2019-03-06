@@ -70,8 +70,8 @@ github.com/taeho-io/auth v0.0.0-20190220072955-159701cfcd87 h1:PAqJ6Cjw1BVMCudgX
 github.com/taeho-io/auth v0.0.0-20190220072955-159701cfcd87/go.mod h1:dyddBqAaHPux+8Ypj+N7cGWUH4YOCROvc1gRawzHOFo=
 github.com/taeho-io/go-taeho v0.0.0-20190304052610-4b79aa9ad7bc h1:HtxA87t6+LN8PL93HuC9+dKFB8hRSycSonW9V3BGa0w=
 github.com/taeho-io/go-taeho v0.0.0-20190304052610-4b79aa9ad7bc/go.mod h1:DSxhG0YqDDQw7qd1xU73xvjKENTQ+6lu1R+DI0FEKOY=
-github.com/taeho-io/idl v0.0.0-20190306053019-c47acd696619 h1:Ua0UyxlZWm0A/4MHkztcClaIDBVmoQKfYjz40IlEbUs=
-github.com/taeho-io/idl v0.0.0-20190306053019-c47acd696619/go.mod h1:dK9VhwJeDSYD6brWtdYV89LKKbCF/1YC/03Z2ovWNkg=
+github.com/taeho-io/idl v0.0.0-20190306090325-2b3c2b5069d0 h1:CUjHKMSTd6nq22pV/uGAb+ZzGw5IiLaeBWzvhM+kYdE=
+github.com/taeho-io/idl v0.0.0-20190306090325-2b3c2b5069d0/go.mod h1:Bp4aVjbmWz9BaP/WTjAyq9FFAjanAjdq3E06ZjMhy9I=
 github.com/taeho-io/taeho-go v0.0.0-20181230233140-814f79be3042 h1:Nnchhv5bGkSs3xJOZncxcE1S+F1d46pUVcgj6KsJ8Dc=
 github.com/taeho-io/taeho-go v0.0.0-20181230233140-814f79be3042/go.mod h1:r6XkEYoI6SXWxDgF0Sp9tbmVj6M82lmvKzR92r7czSU=
 golang.org/x/crypto v0.0.0-20180904163835-0709b304e793 h1:u+LnwYTOOW7Ukr/fppxEb1Nwz0AtPflrblfvUudpo+I=
@@ -87,8 +87,8 @@ golang.org/x/net v0.0.0-20180906233101-161cd47e91fd/go.mod h1:mL1N/T3taQHkDXs73r
 golang.org/x/net v0.0.0-20181106065722-10aee1819953/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/net v0.0.0-20181220203305-927f97764cc3 h1:eH6Eip3UpmR+yM/qI9Ijluzb1bNv/cAU/n+6l8tRSis=
 golang.org/x/net v0.0.0-20181220203305-927f97764cc3/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
-golang.org/x/net v0.0.0-20190108225652-1e06a53dbb7e h1:bRhVy7zSSasaqNksaRZiA5EEI+Ei4I1nO5Jh72wfHlg=
-golang.org/x/net v0.0.0-20190108225652-1e06a53dbb7e/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
+golang.org/x/net v0.0.0-20190301231341-16b79f2e4e95 h1:fY7Dsw114eJN4boqzVSbpVHO6rTdhq6/GnXeu+PKnzU=
+golang.org/x/net v0.0.0-20190301231341-16b79f2e4e95/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be/go.mod h1:N/0e6XlmueqKjAGxoOufVs8QHGRruUQn6yWY3a++T0U=
 golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890 h1:uESlIz09WIHT2I+pasSXcpLYqYK8wHcdCetU3VuMBJE=
 golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890/go.mod h1:N/0e6XlmueqKjAGxoOufVs8QHGRruUQn6yWY3a++T0U=

@@ -11,7 +11,7 @@ import (
 	"github.com/taeho-io/auth"
 	tid "github.com/taeho-io/go-taeho/id"
 	"github.com/taeho-io/id/server/handler"
-	"github.com/taeho-io/idl/generated/go/id"
+	"github.com/taeho-io/idl/gen/go/id"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health"
