@@ -71,6 +71,8 @@ github.com/taeho-io/auth v0.0.0-20190220072955-159701cfcd87 h1:PAqJ6Cjw1BVMCudgX
 github.com/taeho-io/auth v0.0.0-20190220072955-159701cfcd87/go.mod h1:dyddBqAaHPux+8Ypj+N7cGWUH4YOCROvc1gRawzHOFo=
 github.com/taeho-io/go-taeho v0.0.0-20190304052610-4b79aa9ad7bc h1:HtxA87t6+LN8PL93HuC9+dKFB8hRSycSonW9V3BGa0w=
 github.com/taeho-io/go-taeho v0.0.0-20190304052610-4b79aa9ad7bc/go.mod h1:DSxhG0YqDDQw7qd1xU73xvjKENTQ+6lu1R+DI0FEKOY=
+github.com/taeho-io/idl v0.0.0-20190306053019-c47acd696619 h1:Ua0UyxlZWm0A/4MHkztcClaIDBVmoQKfYjz40IlEbUs=
+github.com/taeho-io/idl v0.0.0-20190306053019-c47acd696619/go.mod h1:dK9VhwJeDSYD6brWtdYV89LKKbCF/1YC/03Z2ovWNkg=
 github.com/taeho-io/note v0.0.0-20190304052749-92d15d2939bd h1:04iZjbmlBEbAEwI4V65SqJXaN67EPTsekn0PdDOjLN0=
 github.com/taeho-io/note v0.0.0-20190304052749-92d15d2939bd/go.mod h1:4URRQ+hdbkBXD+GqDJWDnKgEl66dSwFXpV2w/DFNY10=
 github.com/taeho-io/taeho-go v0.0.0-20181230233140-814f79be3042 h1:Nnchhv5bGkSs3xJOZncxcE1S+F1d46pUVcgj6KsJ8Dc=
